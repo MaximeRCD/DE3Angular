@@ -1,1 +1,23 @@
-<p>user-list works!</p>
+<h1>User List</h1>
+<div class="table">
+  <table>
+    <thead>
+    <tr>
+      <th>User Id</th>
+      <th>User Name</th>
+      <th>User Email</th>
+      <th>User Phone</th>
+      <th>User Website</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of userList" (click)="OnClick(user)">
+      <td>{{user.id}}</td>
+      <td>{{user.name}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.phone}}</td>
+      <td>{{user.website}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

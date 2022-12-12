@@ -1,1 +1,20 @@
-<p>user-detail works!</p>
+<div>User Details
+  <p class="one"> Id : {{userDetail.id}}</p>
+  <p class="one"> Name : {{userDetail.name}}</p>
+  <p class="one"> Username : {{userDetail.username}}</p>
+  <p class="one"> Email : {{userDetail.email}}</p>
+  <p class="one"> Address : </p>
+  <p class="two"> Street : {{userDetail.address.street}}</p>
+  <p class="two"> Suite : {{userDetail.address.suite}}</p>
+  <p class="two"> City : {{userDetail.address.city}}</p>
+  <p class="two"> Zip Code : {{userDetail.address.zipcode}}</p>
+  <p class="two"> Geo : </p>
+  <p class="three"> Lat : {{userDetail.address.geo.lat}}</p>
+  <p class="three"> Lng : {{userDetail.address.geo.lng}}</p>
+  <p class="one"> Phone : {{userDetail.phone}}</p>
+  <p class="one"> Website : {{userDetail.website}}</p>
+  <p class="one"> Company : </p>
+  <p class="two"> Name : {{userDetail.company.name}}</p>
+  <p class="two"> Catch Phrase : {{userDetail.company.catchPhrase}}</p>
+  <p class="two"> Bs : {{userDetail.company.bs}}</p>
+</div>

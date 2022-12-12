@@ -12,7 +12,7 @@ export interface User {
       lat: string
       lng: string
     }
-  },
+  }
   phone: string
   website: string
   company: {
