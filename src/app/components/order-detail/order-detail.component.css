@@ -2,17 +2,7 @@
   margin-left: 2%;
   font-weight: bold;
 }
-
-.two{
-  margin-left: 4%;
-}
-
-.three{
-  margin-left: 8%;
-  font-style: italic;
-}
-
-.user-detail{
+.order-detail{
   display: flex;
   flex-direction: row;
 }
