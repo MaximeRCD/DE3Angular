@@ -1,0 +1,9 @@
+<div *ngFor="let product of products_list ">
+   <li> {{product.name}} </li>
+   <li>{{product.info}}</li> 
+   <li>{{product.image}}</li> 
+    <li>{{product.price}}</li>
+
+<button (click)="onClickDetail(product.name)"> Detail</button>
+
+</div>
