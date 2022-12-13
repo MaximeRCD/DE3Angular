@@ -1,0 +1,12 @@
+.one{
+  margin-left: 2%;
+  font-weight: bold;
+}
+.order-detail{
+  display: flex;
+  flex-direction: row;
+}
+
+span{
+  width: 100%;
+}
