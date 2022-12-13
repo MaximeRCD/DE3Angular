@@ -1,5 +1,6 @@
 .one{
   margin-left: 2%;
+  font-weight: bold;
 }
 
 .two{
@@ -7,5 +8,15 @@
 }
 
 .three{
-  margin-left: 6%;
+  margin-left: 8%;
+  font-style: italic;
+}
+
+.user-detail{
+  display: flex;
+  flex-direction: row;
+}
+
+span{
+  width: 100%;
 }
