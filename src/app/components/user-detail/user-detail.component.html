@@ -25,4 +25,6 @@
     <p class="two"> Bs : {{userDetail.company.bs}}</p>
   </span>
 </div>
-<button (click)="returnToList()"> Back </button>
+<button (click)="returnToList()"> Back To User List</button>
+<button *ngIf="fromOrder" (click)="returnToOrder()"> Back To Order</button>
+

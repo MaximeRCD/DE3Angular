@@ -13,13 +13,23 @@ import {OrderService} from "../../service/order.service";
 export class OrderDetailComponent {
 
   orderDetail!: Order;
+  userDetail!: User;
 
-  constructor(private orderService: OrderService,
-              private router: Router) {
+  constructor(
+    private orderService: OrderService,
+    private router: Router,
+    private userService: UserService) {
   }
 
   ngOnInit(): void {
     this.orderDetail = this.orderService.savedOrder;
+  }
+
+  findUser(id: string){
+    this.userService.getUserById(+id).subscribe(res =>{
+      this.userService.savedUser = res[0];
+      this.router.navigate([`/user-detail`])
+    })
   }
 
   returnToList() {
