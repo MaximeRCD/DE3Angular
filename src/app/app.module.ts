@@ -7,13 +7,17 @@ import { UserDetailComponent } from './components/user-detail/user-detail.compon
 import {HttpClientModule} from "@angular/common/http";
 import { ContactComponent } from './components/contact/contact.component';
 import {ReactiveFormsModule} from "@angular/forms";
+import { OrderListComponent } from './components/order-list/order-list.component';
+import { OrderDetailComponent } from './components/order-detail/order-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserListComponent,
     UserDetailComponent,
-    ContactComponent
+    ContactComponent,
+    OrderListComponent,
+    OrderDetailComponent
   ],
     imports: [
         BrowserModule,
