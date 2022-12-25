@@ -16,7 +16,7 @@ export class ProductService {
     return this.http.get<Product[]>(this.apiUrl)
   }
 
-  getproductById(id:string){
-    return this.http.get<Product>(this.apiUrl).pipe(filter(data => data.name.includes(id)))
+  getProductById(name: string){
+    return this.http.get<Product[]>(this.apiUrl).pipe(map(Product=>Product.filter(Product=>Product.name === name)))
   }
 }

@@ -22,7 +22,7 @@ export class ProductListComponent implements OnInit {
   }
 
   onClickDetail(name:string){
-    this.router.navigate(['/detail'])
+    this.router.navigate([`/product-detail/${name}`])
   }
 
   
