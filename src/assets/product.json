@@ -1,0 +1,47 @@
+[{
+	"name": "hero Product",
+	"detail": "Lorem ipsum dolor sit amet",
+	"price": "99",
+	"info": "This is the latest and greatest product from Derp corp.",
+	"hero": "OMG This just came out today!",
+	"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcvPMQZd6pqD7zjI1BZKIVPmv6BGxJPerCAA&usqp=CAU"
+},{
+	"name": "Product 1",
+	"detail": "Lorem ipsum dolor sit amet",
+	"price": "99",
+	"info": "This is the latest and greatest product from Derp corp.",
+	"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcvPMQZd6pqD7zjI1BZKIVPmv6BGxJPerCAA&usqp=CAU"
+},{
+	"name": "Product 2",
+	"detail": "Lorem ipsum dolor sit amet",
+	"price": "99",
+	"info": "This is the latest and greatest product from Derp corp.",
+	"offer": "BOGOF",
+	"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcvPMQZd6pqD7zjI1BZKIVPmv6BGxJPerCAA&usqp=CAU"
+},{
+	"name": "Product 3",
+	"detail": "Lorem ipsum dolor sit amet",
+	"price": "99",
+	"info": "This is the latest and greatest product from Derp corp.",
+	"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcvPMQZd6pqD7zjI1BZKIVPmv6BGxJPerCAA&usqp=CAU"
+},{
+	"name": "Product 4",
+	"detail": "Lorem ipsum dolor sit amet",
+	"price": "99",
+	"info": "This is the latest and greatest product from Derp corp.",
+	"offer": "No srsly GTFO",
+	"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcvPMQZd6pqD7zjI1BZKIVPmv6BGxJPerCAA&usqp=CAU"
+},{
+	"name": "Product 5",
+	"detail": "Lorem ipsum dolor sit amet",
+	"price": "99",
+	"info": "This is the latest and greatest product from Derp corp.",
+	"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcvPMQZd6pqD7zjI1BZKIVPmv6BGxJPerCAA&usqp=CAU"
+},{
+	"name": "Product 6",
+	"detail": "Lorem ipsum dolor sit amet",
+	"price": "99",
+	"info": "This is the latest and greatest product from Derp corp.",
+	"offer": "info with offer",
+	"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcvPMQZd6pqD7zjI1BZKIVPmv6BGxJPerCAA&usqp=CAU"
+}]

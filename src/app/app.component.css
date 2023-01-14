@@ -54,3 +54,7 @@ header {
   color: white;
   font-size: 20px;
 }
+
+li.contact{
+  float: right ;
+}
