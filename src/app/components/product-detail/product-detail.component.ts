@@ -1,3 +1,9 @@
+/*
+* Ce fichier déclare le composant qui affiche les
+* le détail des informations concernant un produit
+* choisi à partir de la liste des produits affichés.
+*/
+
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProductService } from 'src/app/service/product.service';
@@ -8,19 +14,20 @@ import { Product } from 'src/app/service/productSchema';
   templateUrl: './product-detail.component.html',
   styleUrls: ['./product-detail.component.css']
 })
+
 export class ProductDetailComponent implements OnInit{
-  
+
   product!:  Product;
   id: any;
+
   constructor(private route: ActivatedRoute, private productService: ProductService) {}
-  
+
   ngOnInit(): void {
     this.id = this.route.snapshot.paramMap.get('id')
-    this.productService.getProductById(this.id).subscribe((data : Product[])=>
-    {
-      data.forEach(prod => this.product=prod)
-    });
+    this.productService.getProductById(this.id).subscribe(
+      (data : Product[])=>
+      {
+        data.forEach(prod => this.product=prod)
+      });
   }
-
-
 }

@@ -1,3 +1,8 @@
+/*
+* Ce fichier déclare le composant contact qui est
+* utilisé pour déclarer le formulaire de contact.
+*/
+
 import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
 
@@ -6,6 +11,7 @@ import { FormControl } from '@angular/forms';
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
 })
+
 export class ContactComponent {
 
   emailInput = new FormControl('');

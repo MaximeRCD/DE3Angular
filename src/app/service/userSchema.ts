@@ -1,3 +1,5 @@
+/* Ce fichier est utilisé afin de définir la structure de données associée à la représentation des utilsateurs */
+
 export interface User {
   id: number
   name: string

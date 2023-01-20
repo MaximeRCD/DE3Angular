@@ -1,22 +1,30 @@
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+/*
+* Ce fichier contient la définition du service qui
+* s'occupe de la récupération des produits depuis
+* le fichier (json) correspondants placé dans le
+* dossier ./src/assets
+*/
+
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { filter, map } from 'rxjs';
+import { map } from 'rxjs';
 import { Product } from './productSchema';
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class ProductService {
-  
-  apiUrl = "assets/product.json";
 
-  constructor(private http: HttpClient) { }
+  productUrl = "assets/product.json";
 
-  getproducts(){
-    return this.http.get<Product[]>(this.apiUrl)
+  constructor(private http: HttpClient) {}
+
+  getProducts(){
+    return this.http.get<Product[]>(this.productUrl)
   }
 
   getProductById(name: string){
-    return this.http.get<Product[]>(this.apiUrl).pipe(map(Product=>Product.filter(Product=>Product.name === name)))
+    return this.http.get<Product[]>(this.productUrl).pipe(map(Product=>Product.filter(Product=>Product.name === name)))
   }
 }
