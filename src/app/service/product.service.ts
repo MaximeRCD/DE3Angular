@@ -13,6 +13,7 @@ import { Product } from './productSchema';
 @Injectable({
   providedIn: 'root'
 })
+
 export class ProductService {
 
   productUrl = "assets/product.json";
