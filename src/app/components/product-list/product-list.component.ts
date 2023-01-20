@@ -13,7 +13,6 @@ export class ProductListComponent implements OnInit {
   constructor(private productService: ProductService, private router: Router){}
 
   products_list :Product[] = [];
-  //products : Observable<Product[]> | undefined;
   ngOnInit(): void {
     this.productService.getproducts().subscribe((data : Product[])=>
     {
