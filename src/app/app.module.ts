@@ -8,7 +8,7 @@ import { ProductListComponent } from './components/product-list/product-list.com
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 import { HttpClientModule } from "@angular/common/http"
 import { ContactComponent } from './components/contact/contact.component';
-import {ReactiveFormsModule} from "@angular/forms";
+import { ReactiveFormsModule } from "@angular/forms";
 import { OrderListComponent } from './components/order-list/order-list.component';
 import { OrderDetailComponent } from './components/order-detail/order-detail.component';
 
