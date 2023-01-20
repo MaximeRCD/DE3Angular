@@ -1,27 +1,81 @@
 # DE3Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
+# Projet 
 
-## Development server
+The project is to develop a front-end app that displays :
+- a navigation bar with 
+  - a link to products list
+  - a link to users list
+  - a link to orders list
+  - a contact form
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+List are loaded from static json files stored in the backend.
+Each list enables a click to a detail screen, showing the details of :
+- a product
+- a user
+- an order
 
-## Code scaffolding
+Contact form enables to enter an email and a message, with a button to send the message (an alert or a modal will be displayed with the content entered).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Modalities
 
-## Build
+Project has to be done individually or by pair. 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Technical stack
 
-## Running unit tests
+Front-end will be built using Angular.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+An additional CSS lib can be used for a better design, but it is not mandatory.
 
-## Running end-to-end tests
+## Deliverables
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+The expected deliverable will be a Git repo or a zip of your source code, with all your source files.
 
-## Further help
+Send the URL of the Git repo or the zip by mail to your teacher thanks to Mootse.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Please send it for date 23/01 at 00:00 (group A2)
+
+# Clone and run project 
+To run this projet have to clone this repository first. 
+
+Then in your terminal (inside your project) run those commande : 
+
+```bash
+npm install 
+```
+
+```bash
+ng serve
+```
+
+## Project organization
+
+### Components
+
+- Order-list : Component in charge of listing all orders 
+- Order-detail : Component displaying the details of the orders
+- produt-list : Component in charge of listing all the products
+- Product-detail : Detail of the products
+- User-list : display of the users
+- User-detail : User details
+- contact : Management of customer returns
+
+### Services
+
+- order.service: order data management
+- product.service : product data management services
+- user.service : User data management
+
+### data schemas
+
+- orderSchema : order data schemas 
+- productSchema : product data schemas
+- userSchema : user data schemas
+
+## Build project  
+
+```bash 
+ng build --configuration production
+```
+
+You can put the content of the dist folder in a web server to run the application.

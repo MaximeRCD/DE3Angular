@@ -1,21 +1,29 @@
+/*
+* Ce fichier déclare le composant qui affiche les
+* l'ensemble des commandes passées sur le site.
+* Chacune des commandes est cliquable et envoie
+* vers le détail de la commande en question.
+*/
+
 import { Component } from '@angular/core';
-import {Router} from "@angular/router";
-import {Order} from "../../service/orderSchema";
-import {OrderService} from "../../service/order.service";
+import { Router } from "@angular/router";
+import { Order } from "../../service/orderSchema";
+import { OrderService } from "../../service/order.service";
 
 @Component({
   selector: 'app-order-list',
   templateUrl: './order-list.component.html',
   styleUrls: ['./order-list.component.css']
 })
+
 export class OrderListComponent {
+
   orderList: Order[] = [];
 
   constructor(
     private orderService: OrderService,
     private router: Router,
-  ) {
-  }
+  ) {}
 
   userSubscriber = {
     next: (_orderList: Order[]) => _orderList.forEach((order:Order) => this.orderList.push(order)),
@@ -31,5 +39,4 @@ export class OrderListComponent {
     this.orderService.saveOnClick(order);
     this.router.navigate(["/order-detail"])
   }
-
 }

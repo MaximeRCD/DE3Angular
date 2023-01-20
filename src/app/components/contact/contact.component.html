@@ -1,13 +1,32 @@
-<div class="form">
-  <div class="inputs">
-    <label for="email">Email: </label>
-    <input id="email" type="text" [formControl]="emailInput">
-    <label for="message">Your Message: </label>
-    <br>
-    <textarea id="message" rows="5" cols="60" name="text" placeholder="Enter text" [formControl]="messageInput"></textarea>
+<div class="mt-5 conatiner">
+  <div class="text-center">
+      <h3 class="text-primary">How Can We Help You?</h3>
+      <p class="lead">Nous somme la pour vous, posez vos questions </p>
   </div>
-  <div class="buttons">
-    <button (click)="submit()">Submit</button>
+  <div class=" d-flex align-items-center justify-content-center">
+      <div class="bg-white col-md-4">
+          <div class="p-4 rounded shadow-md">
+              <div>
+                  <label for="name" class="form-label">Your Name</label>
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+              </div>
+              <div class="mt-3">
+                  <label for="email" class="form-label">Your Email</label>
+                  <input type="text" name="email" class="form-control" placeholder="Your Email"  [formControl]="emailInput" required>
+              </div>
+              <div class="mt-3">
+                  <label for="subject" class="form-label">Subject</label>
+                  <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+              </div>
+              <div class="mt-3 mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea name="message" cols="20" rows="6" class="form-control"
+                      placeholder="message" [formControl]="messageInput"></textarea>
+              </div>
+              <button class="btn btn-primary" (click)="submit()">
+                  Submit Form
+              </button>
+          </div>
+      </div>
   </div>
 </div>
-

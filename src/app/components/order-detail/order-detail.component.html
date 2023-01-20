@@ -1,4 +1,4 @@
-<div>Order Detail</div>
+<!--<div>Order Detail</div>
 <div class="order-detail">
   <span>
     <p class="one"> Order Id : {{orderDetail.id}}</p>
@@ -8,3 +8,34 @@
   </span>
 </div>
 <button (click)="returnToList()"> Back </button>
+-->
+
+<section>
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6 col-xl-4">
+        <div class="card text-black">
+          <i class="fab fa-apple fa-lg pt-3 pb-1 px-3"></i>
+          <div class="card-body">
+            <div class="text-center">
+              <h5 class="card-title">{{orderDetail.productName}} </h5>
+              
+            </div>
+            <div>
+              <div class="d-flex justify-content-between">
+                <span>Date </span><span>{{orderDetail.date}}</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <span>Client</span><span (click)="findUser(orderDetail.userId)">{{orderDetail.userId}}  (Click me for details)</span> 
+              </div>
+              <div class="d-flex justify-content-between">
+                <span>Total </span><span>1000 €</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div><p></p></div>
+      </div>
+    </div>
+  </div>
+</section>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             

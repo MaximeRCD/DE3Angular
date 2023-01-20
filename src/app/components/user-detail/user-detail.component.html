@@ -1,30 +1,75 @@
-<div>User Detail</div>
-<div class="user-detail">
-  <span>
-    <p class="one"> Id : {{userDetail.id}}</p>
-    <p class="one"> Name : {{userDetail.name}}</p>
-    <p class="one"> Username : {{userDetail.username}}</p>
-    <p class="one"> Email : {{userDetail.email}}</p>
-    <p class="one"> Phone : {{userDetail.phone}}</p>
-    <p class="one"> Website : {{userDetail.website}}</p>
-  </span>
-  <span>
-    <p class="one"> Address : </p>
-    <p class="two"> Street : {{userDetail.address.street}}</p>
-    <p class="two"> Suite : {{userDetail.address.suite}}</p>
-    <p class="two"> City : {{userDetail.address.city}}</p>
-    <p class="two"> Zip Code : {{userDetail.address.zipcode}}</p>
-    <p class="two"> Geo : </p>
-    <p class="three"> Lat : {{userDetail.address.geo.lat}}</p>
-    <p class="three"> Lng : {{userDetail.address.geo.lng}}</p>
-  </span>
-  <span>
-    <p class="one"> Company : </p>
-    <p class="two"> Name : {{userDetail.company.name}}</p>
-    <p class="two"> Catch Phrase : {{userDetail.company.catchPhrase}}</p>
-    <p class="two"> Bs : {{userDetail.company.bs}}</p>
-  </span>
-</div>
-<button (click)="returnToList()"> Back To User List</button>
-<button *ngIf="fromOrder" (click)="returnToOrder()"> Back To Order</button>
-
+<section>
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="card mb-4">
+          <div class="card-body text-center">
+            <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="avatar"
+              class="rounded-circle img-fluid" style="width: 150px;">
+            <h5 class="my-3">{{userDetail.name}}</h5>
+            <p class="text-muted mb-1">{{userDetail.website}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="card mb-4">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Full Name</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">{{userDetail.name}} {{userDetail.username}}</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Email</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">{{userDetail.email}}</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Phone</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">{{userDetail.phone}}</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Address</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">{{userDetail.address.street}}  {{userDetail.address.suite}} {{userDetail.address.city}} {{userDetail.address.city}} {{userDetail.address.zipcode}}</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Zip Code</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">{{userDetail.address.zipcode}}</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Company</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0"> {{userDetail.company.name}} {{userDetail.company.catchPhrase}} {{userDetail.company.bs}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
